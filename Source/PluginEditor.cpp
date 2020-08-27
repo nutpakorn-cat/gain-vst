@@ -40,6 +40,6 @@ void HelloworldGainAudioProcessorEditor::resized()
 
 void HelloworldGainAudioProcessorEditor::sliderValueChanged(Slider *slider) {
     if (slider == &gainSlider) {
-        audioProcessor.gainSlider = gainSlider.getValue();
+        audioProcessor.setGainSlider(gainSlider.getValue());
     }
 }

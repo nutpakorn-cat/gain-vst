@@ -185,6 +185,10 @@ void HelloworldGainAudioProcessor::setStateInformation (const void* data, int si
     // whose contents will have been created by the getStateInformation() call.
 }
 
+void HelloworldGainAudioProcessor::setGainSlider(float gainSliderValue) {
+    gainSlider = gainSliderValue;
+}
+
 //==============================================================================
 // This creates new instances of the plugin..
 juce::AudioProcessor* JUCE_CALLTYPE createPluginFilter()
